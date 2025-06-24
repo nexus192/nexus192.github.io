@@ -1,50 +1,120 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Моя визитка</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .card {
-      background: white;
-      padding: 2em;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    img {
-      width: 100px;
-      border-radius: 50%;
-    }
-    h1 {
-      margin-top: 0.5em;
-    }
-    p {
-      color: #555;
-    }
-    a {
-      text-decoration: none;
-      color: #007acc;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Осипов Михаил | Backend разработчик</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="card">
-    <img src="https://www.gravatar.com/avatar?d=mp" alt="Аватар">
-    <h1>Твоё имя</h1>
-    <p>Разработчик, инженер, энтузиаст</p>
-    <p><a href="mailto:you@example.com">you@example.com</a></p>
-    <p><a href="https://github.com/your-username">GitHub</a></p>
-  </div>
+  <header class="hero">
+    <div class="container">
+      <h1 class="name">Осипов Михаил</h1>
+      <p class="subtitle">Backend разработчик</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn primary"><i class="fas fa-download"></i> Скачать CV</a>
+        <a href="#contact" class="btn secondary"><i class="fas fa-envelope"></i> Связаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title"><i class="fas fa-laptop-code"></i> Навыки</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3><i class="fab fa-cuttlefish"></i> C / C++</h3>
+            <ul class="styled-list">
+              <li>Полное владение базовыми инструментами</li>
+              <li>Знание STL</li>
+              <li>ООП</li>
+              <li>Опыт с Qt</li>
+              <li>Небольшой опыт Vulkan</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3><i class="fab fa-python"></i> Python</h3>
+            <ul class="styled-list">
+              <li>Базовые инструменты</li>
+              <li>ООП</li>
+              <li>Flask</li>
+              <li>Асинхронное программирование</li>
+              <li>Многопоточность</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3><i class="fas fa-tools"></i> Инструменты</h3>
+            <ul class="styled-list">
+              <li>PostgreSQL</li>
+              <li>Git</li>
+              <li>Linux/Unix</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <div class="container compact">
+        <h2 class="section-title"><i class="fas fa-language"></i> Языки</h2>
+        <div class="info-box">
+          <p>Английский — B1 (Intermediate)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container compact">
+        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Проекты</h2>
+        <div class="info-box">
+          <div class="project-link">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/nexus192" target="_blank">GitHub: nexus192</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container compact">
+        <h2 class="section-title"><i class="fas fa-user"></i> Обо мне</h2>
+        <div class="info-box">
+          <p>Backend разработчик с опытом работы на C++ и Python. Специализируюсь на создании эффективных и надежных
+            серверных решений, оптимизации производительности и архитектурном проектировании.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container compact">
+        <h2 class="section-title"><i class="fas fa-envelope"></i> Контакты</h2>
+        <div class="info-box">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>example@domain.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+7 (XXX) XXX-XX-XX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Михаил Осипов</p>
+    </div>
+  </footer>
 </body>
+
 </html>
