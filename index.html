@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,71 +10,90 @@
 </head>
 
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1 class="name">Осипов Михаил</h1>
-      <p class="subtitle">Backend разработчик</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn primary"><i class="fas fa-download"></i> Скачать CV</a>
-        <a href="#contact" class="btn secondary"><i class="fas fa-envelope"></i> Связаться</a>
+  <div class="container">
+    <div class="profile-container">
+      <div class="photo-card"></div>
+      <div class="name-container">
+        <h1 class="name">Осипов Михаил Евгеньевич</h1>
+        <p class="subtitle">Backend разработчик</p>
+        <div class="social-icons">
+          <a href="https://github.com/yourprofile" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://t.me/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://vk.com/yourpage" target="_blank" class="social-link">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="mailto:your@email.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
     </div>
+  </div>
   </header>
 
   <main class="main-content">
+    <!-- Секция "Навыки" -->
     <section class="section" id="skills">
       <div class="container">
         <h2 class="section-title"><i class="fas fa-laptop-code"></i> Навыки</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3><i class="fab fa-cuttlefish"></i> C / C++</h3>
-            <ul class="styled-list">
-              <li>Полное владение базовыми инструментами</li>
-              <li>Знание STL</li>
-              <li>ООП</li>
-              <li>Опыт с Qt</li>
-              <li>Небольшой опыт Vulkan</li>
-            </ul>
-          </div>
 
-          <div class="skill-card">
-            <h3><i class="fab fa-python"></i> Python</h3>
-            <ul class="styled-list">
-              <li>Базовые инструменты</li>
-              <li>ООП</li>
-              <li>Flask</li>
-              <li>Асинхронное программирование</li>
-              <li>Многопоточность</li>
-            </ul>
-          </div>
+        <!-- Карточка C/C++ -->
+        <div class="skill-card left-align">
+          <h3><i class="fab fa-cuttlefish"></i> C / C++</h3>
+          <ul class="styled-list">
+            <li>Полное владение базовыми инструментами</li>
+            <li>Знание STL</li>
+            <li>ООП</li>
+            <li>Опыт с Qt</li>
+            <li>Небольшой опыт Vulkan</li>
+          </ul>
+        </div>
 
-          <div class="skill-card">
-            <h3><i class="fas fa-tools"></i> Инструменты</h3>
-            <ul class="styled-list">
-              <li>PostgreSQL</li>
-              <li>Git</li>
-              <li>Linux/Unix</li>
-              <li>Docker</li>
-              <li>CI/CD</li>
-            </ul>
-          </div>
+        <!-- Карточка Python -->
+        <div class="skill-card left-align">
+          <h3><i class="fab fa-python"></i> Python</h3>
+          <ul class="styled-list">
+            <li>Базовые инструменты</li>
+            <li>ООП</li>
+            <li>Flask</li>
+            <li>Асинхронное программирование</li>
+            <li>Многопоточность</li>
+          </ul>
+        </div>
+
+        <!-- Карточка Инструменты -->
+        <div class="skill-card left-align">
+          <h3><i class="fas fa-tools"></i> Инструменты</h3>
+          <ul class="styled-list">
+            <li>PostgreSQL</li>
+            <li>Git</li>
+            <li>Linux/Unix</li>
+            <li>Docker</li>
+            <li>CI/CD</li>
+          </ul>
         </div>
       </div>
     </section>
 
+    <!-- Секция "Языки" -->
     <section class="section" id="languages">
-      <div class="container compact">
+      <div class="container">
         <h2 class="section-title"><i class="fas fa-language"></i> Языки</h2>
-        <div class="info-box">
+        <div class="info-card">
           <p>Английский — B1 (Intermediate)</p>
         </div>
       </div>
     </section>
 
+    <!-- Секция "Проекты" -->
     <section class="section" id="projects">
-      <div class="container compact">
+      <div class="container">
         <h2 class="section-title"><i class="fas fa-project-diagram"></i> Проекты</h2>
-        <div class="info-box">
+        <div class="info-card">
           <div class="project-link">
             <i class="fab fa-github"></i>
             <a href="https://github.com/nexus192" target="_blank">GitHub: nexus192</a>
@@ -83,20 +102,22 @@
       </div>
     </section>
 
+    <!-- Секция "Обо мне" -->
     <section class="section" id="about">
-      <div class="container compact">
+      <div class="container">
         <h2 class="section-title"><i class="fas fa-user"></i> Обо мне</h2>
-        <div class="info-box">
+        <div class="info-card">
           <p>Backend разработчик с опытом работы на C++ и Python. Специализируюсь на создании эффективных и надежных
             серверных решений, оптимизации производительности и архитектурном проектировании.</p>
         </div>
       </div>
     </section>
 
+    <!-- Секция "Контакты" -->
     <section class="section" id="contact">
-      <div class="container compact">
+      <div class="container">
         <h2 class="section-title"><i class="fas fa-envelope"></i> Контакты</h2>
-        <div class="info-box">
+        <div class="info-card">
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
             <span>example@domain.com</span>
@@ -110,11 +131,7 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Михаил Осипов</p>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
