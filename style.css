@@ -239,3 +239,42 @@ body {
     text-align: left;
   }
 }
+
+/* Стили для описания проектов */
+.project-description {
+  background: rgba(25, 25, 25, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.7;
+}
+
+.project-description h3 {
+  color: #fff;
+  margin: 25px 0 15px;
+  font-size: 1.3rem;
+}
+
+.project-description h3:first-child {
+  margin-top: 0;
+}
+
+.project-description p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.project-links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .project-description {
+    padding: 20px;
+  }
+
+  .project-description h3 {
+    font-size: 1.1rem;
+  }
+}
